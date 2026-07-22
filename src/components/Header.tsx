@@ -1,4 +1,4 @@
-import { Music } from 'lucide-react';
+import ccbLogo from '../assets/ccb-logo.png';
 
 interface HeaderProps {
   totalHoje: number;
@@ -21,7 +21,7 @@ export function Header({ totalHoje, totalSemana }: HeaderProps) {
   return (
     <header className="header">
       <div className="header__icon">
-        <Music />
+        <img src={ccbLogo} alt="Logo CCB" className="header__logo" />
       </div>
       <h1 className="header__title">Ensaios SJC</h1>
       <p className="header__subtitle">
