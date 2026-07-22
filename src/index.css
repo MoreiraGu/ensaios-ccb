@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap');
+
+/* ========================================
+   DESIGN TOKENS
+   ======================================== */
+:root {
+  --bg-primary: #f4f2ee;
+  --bg-secondary: #e9e6e0;
+  --bg-card: #ffffff;
+  --bg-header: #2b2b2b;
+
+  /* Dourado musical */
+  --accent-gold: #b8860b;
+  --accent-gold-light: #d4a843;
+  --accent-gold-soft: rgba(184, 134, 11, 0.08);
+
+  /* Regiões */
+  --region-centro: #7a6b8a;
+  --region-sul: #9e6b7a;
+  --region-norte: #5e8a6b;
+  --region-leste: #8a8050;
+  --region-oeste: #5a7a8f;
+  --region-sudeste: #8f7055;
+  --region-sfx: #4a8a7a;
+
+  /* Texto */
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-muted: #7a7a7a;
+  --text-light: #a0a0a0;
+  --text-on-dark: #ede9e3;
+
+  /* Bordas */
+  --border: #ddd9d2;
+  --border-hover: #cbc7bf;
+
+  /* Utilitários */
+  --radius: 8px;
+  --shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.08);
+  --transition: 200ms ease;
+}
+
+/* ========================================
+   RESET
+   ======================================== */
+*, *::before, *::after {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ========================================
+   LAYOUT
+   ======================================== */
+.app-container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+}
+
+@media (max-width: 768px) {
+  .app-container { padding: 0 16px 32px; }
+}
+
+/* ========================================
+   HEADER
+   ======================================== */
+.header {
+  background: var(--bg-header);
+  color: var(--text-on-dark);
+  padding: 48px 24px 40px;
+  margin-bottom: 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.4s ease;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.header__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border: 2px solid var(--accent-gold-light);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.header__icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--accent-gold-light);
+}
+
+.header__title {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.header__subtitle {
+  color: #aba7a0;
+  font-size: 0.95rem;
+  max-width: 440px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.header__date {
+  color: #8a8680;
+  font-size: 0.88rem;
+  margin-top: 10px;
+}
+
+.header__verse {
+  color: var(--accent-gold-light);
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 0.85rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 14px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* Stats */
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 28px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  min-width: 130px;
+  transition: var(--transition);
+}
+
+.stat-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.stat-card__number {
+  font-family: 'Merriweather', serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.stat-card__number--hoje { color: var(--accent-gold-light); }
+.stat-card__number--semana { color: #ccc8c0; }
+.stat-card__number--total { color: #ccc8c0; }
+
+.stat-card__label {
+  font-size: 0.78rem;
+  color: #9a9690;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* ========================================
+   FILTROS
+   ======================================== */
+.filter-section {
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 0.4s ease 0.05s both;
+}
+
+.filter-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-row__title {
+  font-family: 'Merriweather', serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.filter-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Botões de período - maiores e mais claros */
+.filter-group--periodo {
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 10px 18px;
+  border: 2px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border-radius: var(--radius);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.filter-btn:hover {
+  border-color: var(--border-hover);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.filter-btn--active {
+  background: var(--text-primary) !important;
+  border-color: var(--text-primary) !important;
+  color: #fff !important;
+  font-weight: 600;
+}
+
+/* Botões de período ativos mantêm cor padrão (escura) */
+.filter-btn--periodo.filter-btn--active {
+  background: var(--text-primary) !important;
+  border-color: var(--text-primary) !important;
+}
+
+/* Região ativa = cor da região */
+.filter-btn--region-Centro.filter-btn--active { background: var(--region-centro) !important; border-color: var(--region-centro) !important; }
+.filter-btn--region-Sul.filter-btn--active { background: var(--region-sul) !important; border-color: var(--region-sul) !important; }
+.filter-btn--region-Norte.filter-btn--active { background: var(--region-norte) !important; border-color: var(--region-norte) !important; }
+.filter-btn--region-Leste.filter-btn--active { background: var(--region-leste) !important; border-color: var(--region-leste) !important; }
+.filter-btn--region-Oeste.filter-btn--active { background: var(--region-oeste) !important; border-color: var(--region-oeste) !important; }
+.filter-btn--region-Sudeste.filter-btn--active { background: var(--region-sudeste) !important; border-color: var(--region-sudeste) !important; }
+.filter-btn--region-SFX.filter-btn--active { background: var(--region-sfx) !important; border-color: var(--region-sfx) !important; }
+
+/* Busca */
+.filter-row--search { margin-top: 4px; }
+
+.search-wrapper {
+  position: relative;
+  max-width: 420px;
+}
+
+.search-wrapper svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+}
+
+.search-input {
+  padding: 12px 16px 12px 42px;
+  border: 2px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border-radius: var(--radius);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  width: 100%;
+  transition: var(--transition);
+  outline: none;
+}
+
+.search-input::placeholder { color: var(--text-light); }
+
+.search-input:focus {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 3px var(--accent-gold-soft);
+}
+
+@media (max-width: 768px) {
+  .search-wrapper { max-width: 100%; }
+}
+
+/* ========================================
+   GRID DE ENSAIOS
+   ======================================== */
+.ensaio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .ensaio-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* Estado vazio */
+.ensaio-grid__empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 72px 24px;
+}
+
+.ensaio-grid__empty svg {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 16px;
+  color: var(--text-light);
+  opacity: 0.4;
+}
+
+.ensaio-grid__empty p {
+  font-family: 'Merriweather', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.ensaio-grid__empty span {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 4px;
+}
+
+/* ========================================
+   CARD DO ENSAIO
+   ======================================== */
+.ensaio-card {
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: var(--transition);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow);
+}
+
+/* Barra de cor da região no topo */
+.ensaio-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  height: 5px;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: var(--card-accent, #bbb);
+  opacity: 0.7;
+}
+
+.ensaio-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--border-hover);
+}
+
+.ensaio-card:hover::before {
+  opacity: 1;
+}
+
+/* Card com ensaio HOJE */
+.ensaio-card--hoje {
+  border-color: var(--accent-gold);
+  box-shadow: 0 2px 16px rgba(184, 134, 11, 0.1);
+}
+
+.ensaio-card--hoje::before {
+  background: var(--accent-gold) !important;
+  opacity: 1;
+}
+
+/* --- Topo: nome + badges --- */
+.ensaio-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ensaio-card__igreja {
+  font-family: 'Merriweather', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.ensaio-card__badges {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.badge--regiao {
+  background: var(--bg-secondary);
+  color: var(--card-accent, var(--text-muted));
+  border: 1px solid var(--border);
+}
+
+.badge--hoje {
+  background: var(--accent-gold-soft);
+  color: var(--accent-gold);
+  border: 1px solid rgba(184, 134, 11, 0.25);
+  font-size: 0.72rem;
+}
+
+/* --- Recorrência: DESTAQUE PRINCIPAL --- */
+.ensaio-card__recorrencia {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  padding: 10px 14px;
+  background: var(--accent-gold-soft);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--accent-gold);
+}
+
+.ensaio-card__recorrencia svg {
+  width: 18px;
+  height: 18px;
+  color: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+/* --- Informações: horário + endereço --- */
+.ensaio-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ensaio-card__detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.ensaio-card__detail strong {
+  color: var(--text-primary);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ensaio-card__detail svg {
+  width: 16px;
+  height: 16px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+/* --- Rodapé: próxima data + botão mapa --- */
+.ensaio-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  gap: 12px;
+}
+
+.ensaio-card__next-date {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.ensaio-card__next-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.ensaio-card__next-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.ensaio-card__next-value--hoje {
+  color: var(--accent-gold);
+}
+
+.ensaio-card__countdown {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.ensaio-card__countdown--hoje {
+  color: var(--accent-gold);
+  font-weight: 700;
+}
+
+/* Botão "Como chegar" */
+.maps-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  border: 2px solid var(--border);
+  transition: var(--transition);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.maps-link:hover {
+  background: var(--border);
+  border-color: var(--border-hover);
+  transform: translateX(2px);
+}
+
+.maps-link svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ========================================
+   CORES DAS REGIÕES NOS CARDS
+   ======================================== */
+.ensaio-card[data-region="Centro"] { --card-accent: var(--region-centro); }
+.ensaio-card[data-region="Sul"] { --card-accent: var(--region-sul); }
+.ensaio-card[data-region="Norte"] { --card-accent: var(--region-norte); }
+.ensaio-card[data-region="Leste"] { --card-accent: var(--region-leste); }
+.ensaio-card[data-region="Oeste"] { --card-accent: var(--region-oeste); }
+.ensaio-card[data-region="Sudeste"] { --card-accent: var(--region-sudeste); }
+.ensaio-card[data-region="SFX"] { --card-accent: var(--region-sfx); }
+
+/* ========================================
+   ANIMAÇÕES
+   ======================================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.ensaio-card {
+  animation: fadeIn 0.3s ease both;
+}
+.ensaio-card:nth-child(1) { animation-delay: 0.02s; }
+.ensaio-card:nth-child(2) { animation-delay: 0.04s; }
+.ensaio-card:nth-child(3) { animation-delay: 0.06s; }
+.ensaio-card:nth-child(4) { animation-delay: 0.08s; }
+.ensaio-card:nth-child(5) { animation-delay: 0.1s; }
+.ensaio-card:nth-child(6) { animation-delay: 0.12s; }
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.app-footer {
+  text-align: center;
+  padding: 40px 0 32px;
+  color: var(--text-light);
+  font-size: 0.78rem;
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+}

@@ -1,0 +1,549 @@
+[
+  {
+  "id": "sjc-jardim-uirá",
+  "igreja": "Jardim Uirá",
+  "regiao": "Sudeste",
+  "horario": "19:30",
+  "tipoEnsaio": "Local",
+  "endereco": "R. dos Jaburús, 530 - Jardim Uira, São José dos Campos - SP, 12227-650",
+  "mapsUrl": "https://maps.app.goo.gl/BJKhh7VUwgHpVDwy5",
+  "recorrencia": {
+    "tipo": "ordem_semana",
+    "diaDaSemana": 4,
+    "ordem": [
+      1
+    ]
+  }
+},
+  {
+  "id": "sjc-sao-vicente",
+  "igreja": "São Vicente",
+  "regiao": "Leste",
+  "horario": "19:30",
+  "tipoEnsaio": "Local",
+  "endereco": "Rua Edward Wilson Kimbask, 31 - Jardim Sao Vicente, São José dos Campos - SP, 12224-420",
+  "mapsUrl": "https://maps.app.goo.gl/UWhT9cbVGTTSH9rZ8",
+  "recorrencia": {
+    "tipo": "ordem_semana",
+    "diaDaSemana": 5,
+    "ordem": [
+      1
+    ]
+  }
+},
+{
+    "id": "sjc-vila-maria-central",
+    "igreja": "Vila Maria (Central)",
+    "regiao": "Centro",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "R. São Paulo, 393 - Vila Maria, São José dos Campos - SP, 12209-290",
+    "mapsUrl": "https://maps.app.goo.gl/s8kCYcquzuHh1YQH9",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [4] }
+  },
+  {
+    "id": "sjc-costinha",
+    "igreja": "Costinha",
+    "regiao": "Norte",
+    "horario": "16:00",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Sebastião Alvarenga, 335 - Costinha, São José dos Campos - SP, 12214-460",
+    "mapsUrl": "https://maps.app.goo.gl/YQeFY8oucdBfxQwv6",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 0, "ordem": [1], "restricaoMes": { "tipo": "par" } }
+  },
+  {
+    "id": "sjc-jardim-santa-ines",
+    "igreja": "Jardim Santa Inês",
+    "regiao": "Leste",
+    "horario": "16:00",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Francisco Ferreira Santos, 223 - Jardim Santa Ines I, São José dos Campos - SP, 12248-480",
+    "mapsUrl": "https://maps.app.goo.gl/DQeVY84x2H8d4woV6",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 0, "ordem": [1] }
+  },
+  {
+    "id": "sjc-parque-novo-horizonte",
+    "igreja": "Parque Novo Horizonte",
+    "regiao": "Leste",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. dos Armadores, 912 - Parque Novo Horizonte, São José dos Campos - SP, 12225-640",
+    "mapsUrl": "https://maps.app.goo.gl/nFuzU4urAPottCVk9",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 3, "ordem": [1] }
+  },
+  {
+    "id": "sjc-residencial-uniao",
+    "igreja": "Residencial União",
+    "regiao": "Sul",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "Av. Leonor de Almeida Ribeiro Souto, 197 - Res. Uniao, São José dos Campos - SP, 12239-050",
+    "mapsUrl": "https://maps.app.goo.gl/HfMKDrP5MFiMuPRz5",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 3, "ordem": [1] }
+  },
+  {
+    "id": "sjc-jardim-portugal",
+    "igreja": "Jardim Portugal",
+    "regiao": "Sul",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Lázara Menezes de Oliveira, 110 - Jardim Portugal, São José dos Campos - SP, 12232-240",
+    "mapsUrl": "https://maps.app.goo.gl/SxMEQSEPfFxuqadj6",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 5, "ordem": [1] }
+  },
+  {
+    "id": "sjc-jardim-sao-jose-i",
+    "igreja": "Jardim São José I",
+    "regiao": "Leste",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "Rua João Gomes da Silva, 198 - Jardim Santa Ines I, São José dos Campos - SP, 12248-682",
+    "mapsUrl": "https://maps.app.goo.gl/wDBnuSxbWgL3Zc55A",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 5, "ordem": [1] }
+  },
+  {
+    "id": "sjc-vila-sao-bento",
+    "igreja": "Vila São Bento",
+    "regiao": "Sul",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Aguapeí, 331 - Vila Sao Bento, São José dos Campos - SP, 12231-440",
+    "mapsUrl": "https://maps.app.goo.gl/EvGBuFa2t9376xYi6",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 5, "ordem": [1] }
+  },
+  {
+    "id": "sjc-jardim-altos-de-santana",
+    "igreja": "Jardim Altos de Santana",
+    "regiao": "Norte",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Monte Paschoal, 200 - Jardim Altos de Santana, São José dos Campos - SP, 12214-090",
+    "mapsUrl": "https://maps.app.goo.gl/sHTXkD7Di2KF6WiLA",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [1] }
+  },
+  {
+    "id": "sjc-jardim-das-industrias",
+    "igreja": "Jardim das Indústrias",
+    "regiao": "Sul",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Corifeu de Azevedo Marques, 1017 - Jardim das Industrias, São José dos Campos - SP, 12240-780",
+    "mapsUrl": "https://maps.app.goo.gl/bjpgcJLE6LestecRxWv9",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [1] }
+  },
+  {
+    "id": "sjc-jardim-por-do-sol",
+    "igreja": "Jardim Pôr do Sol",
+    "regiao": "Sul",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Amauri de Oliveira, 103 - Jardim Limoeiro, São José dos Campos - SP, 12241-370",
+    "mapsUrl": "https://maps.app.goo.gl/jrhePoC6svkuBCaj6",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [1] }
+  },
+  {
+    "id": "sjc-residencial-galo-branco",
+    "igreja": "Residencial Galo Branco",
+    "regiao": "Leste",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "Rua Airto Pelógia, 820 - Conj. Res. Galo Branco, São José dos Campos - SP, 12247-551",
+    "mapsUrl": "https://maps.app.goo.gl/DXBYaFNp2X46jsGZ9",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [1] }
+  },
+  {
+    "id": "sjc-fazenda-bom-retiro",
+    "igreja": "Fazenda Bom Retiro",
+    "regiao": "Leste",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "Av. Londrina, 10 - Fazenda Bom Retiro, São José dos Campos - SP",
+    "mapsUrl": "https://maps.app.goo.gl/PQmYHETbdKvTYeZR6",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 3, "ordem": [2] }
+  },
+  {
+    "id": "sjc-vila-corinthians",
+    "igreja": "Vila Corinthians",
+    "regiao": "Centro",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Gladiolo, 143 - Monte Castelo, São José dos Campos - SP, 12215-450",
+    "mapsUrl": "https://maps.app.goo.gl/aAfmDs7ZfgE71PxS7",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 3, "ordem": [2] }
+  },
+  {
+    "id": "sjc-altos-da-vila-paiva",
+    "igreja": "Altos da Vila Paiva",
+    "regiao": "Norte",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Rio das Cobras, 370 - Altos da Vila Paiva, São José dos Campos - SP, 12213-062",
+    "mapsUrl": "https://maps.app.goo.gl/p2U7xSmXGrC4GobB8",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 4, "ordem": [2] }
+  },
+  {
+    "id": "sjc-chacaras-pousada-do-vale",
+    "igreja": "Chácaras Pousada do Vale",
+    "regiao": "Leste",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Manjericão, 322 - Chácaras Pousada do Vale, São José dos Campos - SP, 12226-741",
+    "mapsUrl": "https://maps.app.goo.gl/Pj35VcSulw1LcUTY78",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 4, "ordem": [2] }
+  },
+  {
+    "id": "sjc-jardim-santa-fe",
+    "igreja": "Jardim Santa Fé",
+    "regiao": "Sudeste",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Betim, 560 - Vila Rica, São José dos Campos - SP, 12228-080",
+    "mapsUrl": "https://maps.app.goo.gl/UXrAGHoxYRCb82jp7",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 4, "ordem": [2] }
+  },
+  {
+    "id": "sjc-campos-de-sao-jose",
+    "igreja": "Campos de São José",
+    "regiao": "Leste",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. José Carmo dos Anjos, 15 - Campos de São José, São José dos Campos - SP, 12226-310",
+    "mapsUrl": "https://maps.app.goo.gl/TQbJkJUXQaCrW6mo8",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 5, "ordem": [2] }
+  },
+  {
+    "id": "sjc-jardim-morumbi",
+    "igreja": "Jardim Morumbi",
+    "regiao": "Sul",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Joana Soares Ferreira, 726 - Cidade Morumbi, São José dos Campos - SP, 12236-420",
+    "mapsUrl": "https://maps.app.goo.gl/HbGsZ7gGWaw52zJR9",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 5, "ordem": [2] }
+  },
+  {
+    "id": "sjc-jardim-nova-republica",
+    "igreja": "Jardim Nova República",
+    "regiao": "Sul",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "Av. Cabo Lúcio Mauro da Silva Moreira, 457 - Jardim Nova Republica, São José dos Campos - SP, 12234-862",
+    "mapsUrl": "https://maps.app.goo.gl/LzCWfpqcTJASd7Uk6",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 5, "ordem": [2] }
+  },
+  {
+    "id": "sjc-recanto-dos-eucaliptos",
+    "igreja": "Recanto dos Eucaliptos",
+    "regiao": "Sudeste",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "Av. Dr. Renato Toledo de Mira, 500 - Recanto dos Eucaliptos, São José dos Campos - SP, 12228-065",
+    "mapsUrl": "https://maps.app.goo.gl/VuNEWj28MheABPFQA",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 3, "ordem": [3] }
+  },
+  {
+    "id": "sjc-parque-industrial",
+    "igreja": "Parque Industrial",
+    "regiao": "Sul",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Crato, 936 - Parque Industrial, São José dos Campos - SP, 12235-580",
+    "mapsUrl": "https://maps.app.goo.gl/ACTKsvacK2Kgqvpv7",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 4, "ordem": [3] }
+  },
+  {
+    "id": "sjc-jardim-sul",
+    "igreja": "Jardim Sul",
+    "regiao": "Sul",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "Av. José de Resende, 261 - Jardim Sul, São José dos Campos - SP, 12236-489",
+    "mapsUrl": "https://maps.app.goo.gl/yWk8UscM9cXc2jmu6",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 5, "ordem": [3] }
+  },
+  {
+    "id": "sjc-aguas-de-canindu-ii",
+    "igreja": "Águas de Canindú II",
+    "regiao": "Norte",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "Av. Vicente Cintra de Oliveira, 650 - São José dos Campos, SP",
+    "mapsUrl": "https://maps.app.goo.gl/MiFMTQJJoPBxYDyS8",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [3], "restricaoMes": { "tipo": "par" } }
+  },
+  {
+    "id": "sjc-chacaras-reunidas",
+    "igreja": "Chácaras Reunidas",
+    "regiao": "Sul",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Januária, 331 - Chácaras Reunidas, São José dos Campos - SP, 12238-500",
+    "mapsUrl": "https://maps.app.goo.gl/RrnNNuXM51AV1rhQ6",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [3] }
+  },
+  {
+    "id": "sjc-jardim-da-granja",
+    "igreja": "Jardim da Granja",
+    "regiao": "Sudeste",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Aquarius, 228 - Jardim da Granja, São José dos Campos - SP, 12227-320",
+    "mapsUrl": "https://maps.app.goo.gl/z6gR8pY6h5D5hf6u9",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [3] }
+  },
+  {
+    "id": "sjc-recanto-dos-tamoios",
+    "igreja": "Recanto dos Tamoios",
+    "regiao": "Sudeste",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "Estr. B, 200 - Parque Interlagos, São José dos Campos - SP, 12231-590",
+    "mapsUrl": "https://maps.app.goo.gl/ZSynto6DS9NUUx5V9",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [3] }
+  },
+  {
+    "id": "sjc-capuava",
+    "igreja": "Capuava",
+    "regiao": "Sudeste",
+    "horario": "16:00",
+    "tipoEnsaio": "Local",
+    "endereco": "Avenida Brasil, 900",
+    "mapsUrl": "https://maps.app.goo.gl/mphFVT6D9cPyzzrm9",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 0, "ordem": [4] }
+  },
+  {
+    "id": "sjc-chacara-araujo",
+    "igreja": "Chácara Araújo",
+    "regiao": "Leste",
+    "horario": "16:00",
+    "tipoEnsaio": "Local",
+    "endereco": "Rua Quatis, 94 - b - Chácaras Araújo, São José dos Campos - SP, 12225-127",
+    "mapsUrl": "https://maps.app.goo.gl/h1QagrHum6VfY8mF6",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 0, "ordem": [4] }
+  },
+  {
+    "id": "sjc-eugenio-de-melo",
+    "igreja": "Eugênio de Melo",
+    "regiao": "Leste",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. João Pelógia, 79 - Eugênio de Melo, São José dos Campos - SP, 12247-080",
+    "mapsUrl": "https://maps.app.goo.gl/8fNKsfgWsnXWaB2LA",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 4, "ordem": [4] }
+  },
+  {
+    "id": "sjc-jardim-colonial",
+    "igreja": "Jardim Colonial",
+    "regiao": "Sul",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Edésia Gonçalves Neves, 36 - Jardim Colonial, São José dos Campos - SP, 12234-006",
+    "mapsUrl": "https://maps.app.goo.gl/2Y6BFQuFvUCUCvaZ8",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 5, "ordem": [4] }
+  },
+  {
+    "id": "sjc-jardim-santa-luzia",
+    "igreja": "Jardim Santa Luzia",
+    "regiao": "Sudeste",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "Av. Júlio Cézar Vilaça, 278 - Jardim Santa Luzia, São José dos Campos - SP, 12228-005",
+    "mapsUrl": "https://maps.app.goo.gl/7MRtQxxUUVNbYxDU8",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 5, "ordem": [4] }
+  },
+  {
+    "id": "sjc-jardim-valparaiba",
+    "igreja": "Jardim Valparaíba",
+    "regiao": "Leste",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. das Secretárias, 147 - Jardim Valparaiba, São José dos Campos - SP, 12221-400",
+    "mapsUrl": "https://maps.app.goo.gl/69tqWJRuDCw3HJdB7",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 5, "ordem": [4] }
+  },
+  {
+    "id": "sjc-sao-francisco-xavier",
+    "igreja": "São Francisco Xavier",
+    "regiao": "SFX",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Treze de Maio, 350 - Centro, São José dos Campos - SP, 12249-000",
+    "mapsUrl": "https://maps.app.goo.gl/88EejQMMTgBqGMV16",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 5, "ordem": [4], "restricaoMes": { "tipo": "par" } }
+  },
+  {
+    "id": "sjc-sao-judas-tadeu",
+    "igreja": "São Judas Tadeu",
+    "regiao": "Sudeste",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "Av. São Cristóvão, 50 - Jardim Sao Judas Tadeu, São José dos Campos - SP, 12228-260",
+    "mapsUrl": "https://maps.app.goo.gl/hX3ZV3HMZw1rUfxUA",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [4] }
+  },
+  {
+    "id": "sjc-chacaras-majestic-iii",
+    "igreja": "Chácaras Majestic III",
+    "regiao": "Leste",
+    "horario": "16:00",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Quebra-Eixo, 341 - Majestic, São José dos Campos - SP",
+    "mapsUrl": "https://maps.app.goo.gl/tgH37Qor4t3d8LXv6",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 0, "ordem": [-1] }
+  },
+  {
+    "id": "sjc-santana",
+    "igreja": "Santana",
+    "regiao": "Norte",
+    "horario": "16:00",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Nhumirim, 268 - Santana, São José dos Campos - SP, 12212-010",
+    "mapsUrl": "https://maps.app.goo.gl/sTtbgDrNJ2sQ7bs28",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 0, "ordem": [-1] }
+  },
+  {
+    "id": "sjc-monteiro-lobato",
+    "igreja": "Monteiro Lobato",
+    "regiao": "Monteiro Lobato",
+    "horario": "16:00",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Luís Paulo Larai, 40, Monteiro Lobato - SP, 12250-000",
+    "mapsUrl": "https://maps.app.goo.gl/fwBvm5BA2CT2vmZL8",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 0, "ordem": [-1], "restricaoMes": { "tipo": "impar" } }
+  },
+  {
+    "id": "sjc-rio-comprido",
+    "igreja": "Rio Comprido",
+    "regiao": "Sul",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "Rua Quatro, 29 - Rio Comprido, São José dos Campos - SP, 12230-002",
+    "mapsUrl": "https://maps.app.goo.gl/eQLiKVfG1xoxWXiE9",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 1, "ordem": [-1] }
+  },
+  {
+    "id": "sjc-vila-industrial",
+    "igreja": "Vila Industrial",
+    "regiao": "Leste",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "Rua Ângelo Ottoboni, 272 - Vila Industrial, São José dos Campos - SP, 12220-490",
+    "mapsUrl": "https://maps.app.goo.gl/UNcUherMBHLkoYK99",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 3, "ordem": [-1] }
+  },
+  {
+    "id": "sjc-parque-interlagos",
+    "igreja": "Parque Interlagos",
+    "regiao": "Sul",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Benedito Machado de Arantes, 136 - Jardim Torrao de Ouro, São José dos Campos - SP, 12229-050",
+    "mapsUrl": "https://maps.app.goo.gl/X3AWXx7voWGbWKPo6",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 4, "ordem": [-1] }
+  },
+  {
+    "id": "sjc-jardim-satelite",
+    "igreja": "Jardim Satélite",
+    "regiao": "Sul",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Delfim, 330 - Jardim Satélite, São José dos Campos - SP, 12230-410",
+    "mapsUrl": "https://maps.app.goo.gl/czPwJX2jX5dv3k629",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 5, "ordem": [-1] }
+  },
+  {
+    "id": "sjc-santa-helena",
+    "igreja": "Santa Helena",
+    "regiao": "Leste",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "Av. Saulo Antunes de Carvalho, 59 - Res. Dom Bosco, São José dos Campos - SP, 12225",
+    "mapsUrl": "https://maps.app.goo.gl/rQnJNPntDzECD4Qg9",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 5, "ordem": [-1], "restricaoMes": { "tipo": "par" } }
+  },
+  {
+    "id": "sjc-campo-dos-alemaes",
+    "igreja": "Campo dos Alemães",
+    "regiao": "Sul",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "Rua Pedro José dos Santos, 342 - Campo dos Alemães, São José dos Campos - SP, 12239-830",
+    "mapsUrl": "https://maps.app.goo.gl/f8TYfGMppnkDq34B7",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [-1] }
+  },
+  {
+    "id": "sjc-assentamento-nova-esperanca",
+    "igreja": "Assentamento Nova Esperança",
+    "regiao": "Norte",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "W54P+77 São José dos Campos, State of São Paulo",
+    "mapsUrl": "https://maps.app.goo.gl/swEpYt27SBy54svd6",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [-1], "restricaoMes": { "tipo": "especifico", "meses": [2, 5, 8, 11] } }
+  },
+   { "id": "sjc-jardim-nova-esperanca-banhado", 
+    "igreja": "Jardim Nova Esperança - Banhado",
+    "regiao": "Centro",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "Ladeira Otávio Batista da Cruz - Centro, São José dos Campos - SP, 12245-700",
+    "mapsUrl": "https://maps.app.goo.gl/Kkhx7ekeYd4Ju7cx5",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 4, "ordem": [3], "restricaoMes": { "tipo": "par" } },
+    "_obs": "endereço só tem o nome da rua, ta errado"
+  },
+  {
+    "id": "sjc-pinheirinho-dos-palmares",
+    "igreja": "Pinheirinho dos Palmares ",
+    "regiao": "Sudeste",
+    "horario": "19:30",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Nubia Paes de Carvalho, 181 - Jardim Jatoba, São José dos Campos - SP, 12228-037",
+    "mapsUrl": "https://maps.app.goo.gl/Nms2gnsp8BxoJ55a8",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 5, "ordem": [3] },
+    "_obs": "à confirmar se é o pinheirinho da zona sudeste mesmo"
+  },
+  {
+    "id": "sjc-freitas",
+    "igreja": "Freitas",
+    "regiao": "Norte",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "R. Um, 18 - Mirante do Buquirinha, São José dos Campos - SP, 12214-520",
+    "mapsUrl": "https://maps.app.goo.gl/iEjP7Djdeqi74Boe8",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [3], "restricaoMes": { "tipo": "impar" } },
+    "_obs": "à confirmar, pois no site da congregação o freitas tá lá no rio comprido o endereço"
+  },
+  {
+    "id": "sjc-jardim-santa-maria",
+    "igreja": "Jardim Santa Maria",
+    "regiao": "Leste",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "Rua José Leite Filho, 880 ",
+    "mapsUrl": "https://maps.app.goo.gl/iCs6yHjre7WW9iT88",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [4] },
+    "_obs": "a confirmar, saber se é santa maria sjc ou jacarei"
+  },
+  {
+    "id": "sjc-jardim-primavera",
+    "igreja": "Jardim Primavera",
+    "regiao": "",
+    "horario": "17:00",
+    "tipoEnsaio": "Local",
+    "endereco": "",
+    "mapsUrl": "",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [3] },
+    "_obs": "endereço errado no site da congregação"
+  },
+  {
+    "id": "sjc-pinheirinho-urbanova",
+    "igreja": "Pinheirinho Urbanova",
+    "regiao": "",
+    "horario": "17:00",
+    "tipoEnsaio": "",
+    "endereco": "",
+    "mapsUrl": "",
+    "recorrencia": { "tipo": "ordem_semana", "diaDaSemana": 6, "ordem": [3], "restricaoMes": { "tipo": "impar" } },
+    "_obs": "endereço errado no site da congregação"
+  }
+]
